@@ -1,1 +1,24 @@
-<h1>Debate Event Organizer</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debate Event Organizer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Debate Event Organizer</h1>
+
+    <a href="/event/add" class="btn">Add Event</a>
+
+    <h2>Events</h2>
+    <ul>
+    {% for e in events %}
+        <li>
+            <strong>{{ e.name }}</strong> — {{ e.date }}  
+            <br>
+            <a href="/participant/add/{{ e.id }}">Add Participant</a> |  
+            <a href="/schedule/add/{{ e.id }}">Add Schedule</a>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
