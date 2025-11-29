@@ -54,3 +54,4 @@ debate-event-organiser/
 ├── static/
 ├── models/
 ├── database/
+<img width="1536" height="1024" alt="ChatGPT Image Nov 29, 2025, 10_05_37 AM" src="https://github.com/user-attachments/assets/1ec1f6c9-a794-4a7a-92c0-26aeafb40215" />
